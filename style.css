@@ -255,6 +255,17 @@ body{
     font-size: 18px;
     line-height: 20px;
 }
+.cont_box2 input{
+    padding: 13px 10px;
+
+}
+.cont_box2 input::placeholder,textarea::placeholder{
+    color: red;
+}
+.cont_box2 input:focus,textarea:focus{
+    outline: none;
+    
+}
 .inp1{
     width: 425px;
     height: 25px;
