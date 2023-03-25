@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( pink, yellow,orange);
+    background-size: cover;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.comm_btn{
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+}
+.comm_btn:hover{
+    color: red;
+    background-color: #fff;
+    transition: all 0.2s;
+    transform: scale(1.2);
+}
+.sec_heading{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-bottom: 6px double rgba(200, 0, 0, 0.4);
+
+}
+.header_area{
+    width: 100vw;
+    height: 70px;
+    background-color:#FFC7B5 ;
+    border-bottom: 3px solid rgba(200, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+}
+.header_area .nav_area{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_area .nav_area .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    cursor: pointer;
+}
+.header_area .nav_area .logo a span{
+    color: rgb(255, 1, 1);
+}
+.header_area .nav_area .menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_area .nav_area .menu ul li{
+    list-style: none;
+}
+.header_area .nav_area .menu ul li a{
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 25px;
+    cursor: pointer;
+    color: red;
+}
+/* ===nav area end=== */
+.hero_area{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.hero_area .hero_img{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-image: url(./images/hero1.jpg);
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* ===hero area end=== */
+.about_area{
+    width: 100%;
+    height: 700px;
+}
+
+.about_area .about{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
+.about_area .about .pic{
+    width: 25vw;
+    height: 600px;
+    background-image: url(./images/about2.jpg);
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+.about_area .about .about_us{
+    width: 40vw;
+    height: 600px;
+    border: 3px dotted red;
+    padding: 20px;
+    /* overflow: scroll; */
+    box-shadow: 3px 4px 10px 7px rgba(234, 4, 4, 0.407), 3px 4px 10px 7px rgba(255, 4, 4, 0.407);
+}
+.about_area .about .about_us h2{
+    font-size: 35px;
+}
+.about_area .about .about_us h2 blockquote{
+    line-height: 2.0;
+}
+.about_area .about .about_us h2 span{
+    color: red;
+    font-weight: 900;
+}
+.about_area .about .about_us p{
+    margin-top: 80px;
+    font-size: 20px;
+    /* line-height: 30px; */
+}
+/* ===about area end=== */
+.service_area{
+    width: 100%;
+    height: 800px;
+}
+.service_area .service_list{
+    width: 85%;
+    height: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.service_area .service_list .service{
+    width: 350px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px 7px rgba(150, 4, 4, 0.4), 5px 5px 10px 7px rgba(150, 4, 4, 0.4);
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+.service_area .service_list .service .serv_img1{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.service_area .service_list .service h4 a{
+    font-size: 20px;
+    color: #222;
+}
+.service_area .service_list .service p{
+    text-align: center;
+    margin: 10px 20px;
+} 
+/* ===service area end=== */
+.pricing_area{
+    width: 100%;
+    height: 500px;
+}
+.pricing_area .price_list{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.pricing_area .price_list .price ol{
+    list-style: none;
+    border-bottom: 3px dashed rgba(150, 4, 4, 0.4);
+}
+.pricing_area .price_list .price{
+    width: 270px;
+    height: 350px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid rgba(234, 4, 4, 0.407);
+    box-shadow: 5px 5px 10px 7px rgba(1, 4, 4, 0.4), 5px 5px 10px 7px rgba(2, 4, 4, 0.4);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+.pricing_area .price_list .price h4{
+    font-size: 25px;
+    margin: 15px auto;
+    background-color: #F66F02;
+    border-radius: 10px;
+    padding: 5px;
+    border-bottom: 3px solid rgba(150, 4, 4, 0.4);
+}
+.pricing_area .price_list .price p{
+    font-size: 15px;
+    font-weight: 700;    
+}
+/* ===pricing area end=== */
+.contact_area{
+    width: 100%;
+    height: 350px;
+}
+.contact{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont_box1{
+    width: 500px;
+    height: 90%;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.cont_box2{
+    width: 500px;
+    height: 90%;
+    font-size: 18px;
+    line-height: 20px;
+}
+.inp1{
+    width: 425px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 4, 4, 0.7);
+    margin: 10px;
+    padding: 5px;
+}
+.inp2{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 4, 4, 0.7);
+    margin: 10px;
+    padding: 5px;
+}
+.inp3{
+    width: 425px;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 4, 4, 0.7);
+    margin: 10px;
+    padding: 5px;
+}
+/* ===contat area end=== */
+.find_area{
+    width: 100%;
+    height: 480px;
+}
+.find{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+iframe{
+    border-radius: 20px;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #FFC7B5;
+}
+ footer .footer{
+    width: 90%;
+    height: 100%;
+ }
+ footer .footer .copy p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin: 0 auto;
+ }
+/* ===desing end=== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
