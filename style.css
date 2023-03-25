@@ -83,24 +83,16 @@ body{
 }
 /* ===nav area end=== */
 .hero_area{
-    height: 600px;
+    height: 500px;
     width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
 }
-.hero_area .hero_img{
-    height: 100%;
+.hero_area .item img{
     width: 90%;
+    height: 500px;
     margin: 0 auto;
-    background-image: url(./images/hero1.jpg);
-    background-size: cover;
-    object-fit: cover;
-    object-position: center;
     border-radius: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
+
 /* ===hero area end=== */
 .about_area{
     width: 100%;
